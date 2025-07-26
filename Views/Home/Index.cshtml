@@ -1,8 +1,99 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!-- Sección Presentación -->
+<section id="presentacion" class="container py-5">
+  <div class="row align-items-center">
+    <div class="col-md-7">
+      <h1 class="display-5 fw-bold">Paola Amarillo</h1>
+      <p class="lead">Co-creadora de <strong>Migrando Emociones</strong></p>
+      <p>
+        Soy parte de una red de profesionales especializadas en brindar <strong>apoyo emocional a personas migrantes</strong>.
+        A través de <strong>sesiones y talleres gratuitos</strong>, acompañamos procesos personales que surgen al transitar la migración:
+        desde el desarraigo, la búsqueda de pertenencia, hasta los desafíos prácticos del día a día.
+      </p>
+      <p>
+        <strong>Migrando Emociones</strong> es un espacio de contención donde podés encontrar:
+      </p>
+      <ul>
+        <li>Sesiones individuales y grupales sin costo</li>
+        <li>Talleres vivenciales y charlas temáticas</li>
+        <li>Acompañamiento en la búsqueda de hogar y empleo</li>
+        <li>Una comunidad que te comprende y te abraza</li>
+      </ul>
+      <p>
+        Estamos acá para ayudarte a <strong>transformar el duelo migratorio en crecimiento personal</strong>.
+      </p>
+    </div>
+    <div class="col-md-5 text-center">
+      <img src="~/images/PaolaAmarillo.png" alt="Paola Amarillo" class="img-fluid rounded-3 shadow">
+    </div>
+  </div>
+</section>
+
+<!-- Sección Servicios -->
+<section id="servicios" class="container py-5 bg-light">
+  <h2 class="text-center mb-4">Nuestros Servicios</h2>
+  <div class="row g-4">
+
+    <div class="col-md-6">
+      <div class="p-4 bg-white rounded-3 shadow-sm h-100">
+        <h4 class="fw-bold">Sesiones de contención emocional</h4>
+        <p>Espacios individuales y grupales, gratuitos, donde podés expresar tus emociones, compartir tus experiencias y sentirte escuchado/a en tu proceso migratorio.</p>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="p-4 bg-white rounded-3 shadow-sm h-100">
+        <h4 class="fw-bold">Talleres y charlas temáticas</h4>
+        <p>Encuentros virtuales y presenciales con herramientas para afrontar el duelo migratorio, la ansiedad, el estrés y el proceso de adaptación en un nuevo país.</p>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="p-4 bg-white rounded-3 shadow-sm h-100">
+        <h4 class="fw-bold">Red de apoyo comunitario</h4>
+        <p>Un espacio donde conectar con otras personas migrantes, compartir experiencias y encontrar acompañamiento humano durante tu camino.</p>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="p-4 bg-white rounded-3 shadow-sm h-100">
+        <h4 class="fw-bold">Orientación en búsqueda de hogar y empleo</h4>
+        <p>Te ayudamos a encontrar recursos, redes y consejos prácticos para iniciar tu vida en el nuevo lugar: desde alquilar un cuarto hasta conseguir tu primer trabajo.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Sección Contacto -->
+<section id="contacto" class="container py-5">
+  <h2 class="text-center mb-4">Contacto</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="p-4 rounded-4 shadow-sm bg-white"> <!-- Caja con borde redondeado y sombra -->
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="tunombre@email.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="5" placeholder="Contanos cómo te podemos ayudar..." required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary px-4">Enviar mensaje</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
