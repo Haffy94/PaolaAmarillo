@@ -100,9 +100,11 @@ p, a, li, .navbar a, footer {
 }
 
 .img-profile {
+  filter: drop-shadow(5px 5px 10px gold);
   mask-image: linear-gradient(
     black 80%, transparent
   );
+  
 }
 
 .img-pnl {
