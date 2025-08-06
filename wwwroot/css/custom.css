@@ -1,6 +1,11 @@
+/* Importar fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700&family=Lato&display=swap');
+
+
 :root {
-  --color-primary: #D4AF37;                /* Dorado principal */
-  --color-primary-hover: #F5C518 ;          /* Dorado claro (hover) */
+  --color-primary: #fafafa;                /* Blanco */
+  --color-secondary: #ffbb00;              /* Dorado */
+  --color-primary-hover: #F5C518 ;         /* Dorado claro (hover) */
   --color-bg-light: #121212;               /* Fondo secciones claras (cards, servicios) */
   --color-navbar-footer-bg: #000000;       /* Fondo navbar y footer */
   --color-text-dark: #FFFFFF;              /* Títulos y textos claros */
@@ -8,8 +13,8 @@
   --bs-secondary-color: #999999;           /* Para placeholders u opciones secundarias */
 }
 
-
 html {
+  scroll-padding-top: 80px;
   font-size: 14px;
   position: relative;
   min-height: 100%;
@@ -25,28 +30,89 @@ html {
 
 body {
   margin-bottom: 60px;
-  padding-top: 70px;
+  min-height: 100vh;
   background-color: #000;
-  background-image: url('/images/stars3.png'); /* Reemplazá con la ruta real */
+  background-image: url('/images/sinapsis3.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
-.btn:focus,
-.btn:active:focus,
-.btn-link.nav-link:focus,
-.form-control:focus,
-.form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem var(--color-primary);
+/*Configuracion de etiquetas*/
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: var(--color-primary);
 }
+
+h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+p, a, li, label, input, textarea, .navbar a, footer{
+  color: var(--color-secondary);
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+}
+
+p.lead {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/*Configuracion de navbar*/
 
 .navbar, footer {
   background-color: var(--color-navbar-footer-bg);
 }
 
-.navbar a, footer a {
+.navbar .nav-link {
+  color: var(--color-primary) !important;
+}
+
+.navbar .nav-link:hover {
+  color: var(--color-secondary) !important;
+}
+
+.navbar a:hover {
+  color: var(--color-secondary) !important;
+}
+
+/*configuracion de dropdown*/
+
+.dropdown-menu-transparent {
+  background-color: rgba(0, 0, 0, 0.4) !important; 
+  backdrop-filter: blur(8px);
+  border: none; 
+}
+
+.dropdown-menu-transparent .dropdown-item {
   color: var(--color-primary);
+}
+
+.dropdown-menu-transparent .dropdown-item:hover,
+.dropdown-menu-transparent .dropdown-item:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+/**/
+input, textarea {
+  background-color: #1a1a1a;
+  border: 1px solid var(--color-primary);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--bs-secondary-color);
+}
+
+.form-control:focus {
+  border-color: var(--color-primary-hover);
+  box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25);
 }
 
 .btn-primary {
@@ -70,45 +136,51 @@ body {
   background-color: #1a1a1a !important;
 }
 
-h1, h2, h3, h4 {
-  color: var(--color-text-dark);
+/*AboutMe*/
+
+/* Sección "Sobre mí" ocupa toda la altura del viewport */
+#AboutMe {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
-p, li, label, input, textarea {
-  color: var(--color-text-normal);
+/* Centrado vertical del texto dentro de la columna derecha */
+#AboutMe .col-md-7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
-input, textarea {
-  background-color: #1a1a1a;
-  border: 1px solid var(--color-primary);
-}
-
-input::placeholder, textarea::placeholder {
-  color: var(--bs-secondary-color);
-}
-
-.form-control:focus {
-  border-color: var(--color-primary-hover);
-  box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25);
-}
-h1, h2, h3, h4 {
-  color: #FFFFFF; /* blanco */
-}
-
-p, a, li, .navbar a, footer {
-  color: #ffbb00  !important; /* dorado */
-}
-
+/* Imagen del perfil con sombra y recorte */
 .img-profile {
-  filter: drop-shadow(5px 5px 10px gold);
-  mask-image: linear-gradient(
-    black 80%, transparent
-  );
-  
+  filter: drop-shadow(5px 5px 10px orange);
+  mask-image: linear-gradient(black 80%, transparent);
+  max-height: 700px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 
-.img-pnl {
-  mask-image: linear-gradient(
-    to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
 
+/*NLP*/
+#Nlp {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Imagen decorativa para PNL */
+.img-nlp {
+  mask-image: linear-gradient(black 80%, transparent);
+}
+
+/*Graphology*/
+
+#Graphology {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }

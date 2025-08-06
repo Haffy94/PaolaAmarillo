@@ -2,64 +2,16 @@
     ViewData["Title"] = "Inicio";
 }
 
-<!-- Sección Sobre Mí -->
-<section id="sobre-mi" class="container py-5">
-  <div class="row align-items-center">
-    <div class="col-md-5">
-      <img src="~/images/paola02ee.png" alt="Paola Amarillo" class="img-fluid rounded-3 shadow img-profile">
-    </div>
-    <div class="col-md-7">
-      <h1 class="display-5 fw-bold">Paola Amarillo</h1>
-      <p class="lead">Máster en Programación Neurolingüística – Perito Grafóloga – Selectora de Personal</p>
-      <p>
-        Máster en Programación Neurolingüística (PNL), Perito Grafóloga y Selectora de Personal. Acompaño a empresas y emprendedores a fortalecer sus equipos desde una mirada integral que combina herramientas de análisis humano, comunicación efectiva y procesos conscientes de selección
-      </p>
-      <p>
-        Mi enfoque se basa en potenciar el desarrollo personal y profesional, tanto a nivel individual como organizacional, integrando distintas disciplinas con el objetivo de promover entornos laborales más humanos, eficientes y alineados con valores compartidos.
-      </p>
-    </div>
-  </div>
-</section>
+<partial name="_AboutMeSection" />
 
-<!-- PNL -->
-<section id="pnl" class="container py-5">
-  <div class="row align-items-center">
-    <div class="col-md-5">
-      <img src="~/images/programacionNeuroLing.png" alt="Pnl" class="img-fluid rounded-3 shadow img-pnl" style="max-height:350px;">
-    </div>
-    <div class="col-md-7">
-      <h2 class="fw-bold mb-3">Programación Neurolingüística (PNL)</h2>
-      <p class="lead">¿Qué es y como aporta valor en el ámbito Organizacional?</p>
-      <p>
-        La PNL es una herramienta que se enfoca en el estudio del lenguaje y proceso neurológico que influyen en el comportamiento humano y la comunicación. A través de distintas técnicas,  ayuda a generar cambios positivos en la forma en que pensamos, nos comunicamos y actuamos, logrando así cambiar patrones y obtener los resultados deseados.
-      </p>
-      <p>¿Cómo funciona?</p>
-      <p>Se basa en cuatro pilares fundamentales:</p>
-      <ul>
-        <li>Orientación a resultados: definir metas claras, facilitadoras de acción.</li>
-        <li>Comunicación eficaz: tanto verbal como no verbal, incluyendo empatía, escucha activa y rapport.</li>
-        <li>Agudeza sensorial: sintonizar con los canales visual, auditivo y kinestésico.</li>
-        <li>Flexibilidad conductual: cambiar estrategias que no funcionan y adaptarse al contexto.</li>
-      </ul>
-      <p>Técnicas que utilizo en mi acompañamiento:</p>
-      <ul>
-        <li>Anclajes: activar estados emocionales deseados en contextos laborales.</li>
-        <li>Reencuadres: transformar percepciones limitantes en oportunidades de aprendizaje.</li>
-        <li>Modelado: replicar comportamientos exitosos de líderes.</li>
-        <li>Rapport: generar confianza a través de una comunicación respetuosa.</li>
-      </ul>
-      <p>¿Cómo aplico la PNL en tu empresa?</p>
-      <p>
-        Diseño y facilito entrenamientos personalizados para mejorar la comunicación interna, la cohesión de equipos, la motivación y el liderazgo con eficacia emocional. Mi enfoque potencia la autoconfianza, reduce el estrés y genera un entorno laboral productivo y alineado con tus objetivos para llegar a la meta de productividad deseada.
-      </p>
-    </div>
-  </div>
-  
-</section>
+<partial name="_NeurolinguisticProgramming" />
 
 <!-- Grafología -->
-<section id="grafologia" class="container py-5 bg-light">
+<section id="Graphology" class="container py-5">
   <div class="row align-items-center">
+    <div class="col-md-5">
+      <img src="~/images/grafologia.png" alt="grafologia" class="img-fluid rounded-3 shadow" style="max-height:350px;">
+    </div>
     <div class="col-md-7">
       <h2 class="fw-bold mb-3">Grafología aplicada al entorno empresarial</h2>
       <p><strong>¿Qué es y cómo la aplico?</strong></p>
@@ -72,7 +24,7 @@
       </p>
       <p><strong>¿Para qué sirve en las empresas?</strong></p>
       <ul>
-        <li>Complementar entrevistas y test psicológicos.</li>
+        <li>Complementar entrevistas y test psicológicos.</li>
         <li>Ayudar a perfilar candidatos en procesos de selección.</li>
         <li>Identificar fortalezas y áreas de mejora en equipos ya constituidos.</li>
         <li>Aportar una lectura diferente sobre estilos cognitivos y emocionales.</li>
@@ -81,9 +33,6 @@
       <p>
         Para evaluar perfiles, identificar fortalezas, compatibilidades, estilos de trabajo y áreas de mejora, tanto en candidatos como en equipos ya consolidados. Aporta una perspectiva profunda que complementa otras herramientas de evaluación personal y profesional.
       </p>
-    </div>
-    <div class="col-md-5">
-      <img src="~/images/grafologia.png" alt="grafologia" class="img-fluid rounded-3 shadow" style="max-height:350px;">
     </div>
   </div>
   
@@ -106,7 +55,7 @@
 </section>
 
 <!-- Administrativo-Legal -->
-<section id="administrativo" class="container py-5 bg-light">
+<section id="administrativo" class="container py-5">
   <h2 class="fw-bold mb-3">Experiencia Administrativa, Contable y Legal</h2>
   <p><strong>Gestión integral con enfoque estratégico</strong></p>
   <p>
