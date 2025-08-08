@@ -1,20 +1,23 @@
 /* Importar fuentes desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700&family=Lato&display=swap');
 
-
 :root {
   --color-primary: #fafafa;                /* Blanco */
   --color-secondary: #ffbb00;              /* Dorado */
   --color-primary-hover: #F5C518 ;         /* Dorado claro (hover) */
   --color-bg-light: #121212;               /* Fondo secciones claras (cards, servicios) */
-  --color-navbar-footer-bg: #000000;       /* Fondo navbar y footer */
   --color-text-dark: #FFFFFF;              /* Títulos y textos claros */
   --color-text-normal: #CCCCCC;            /* Texto principal más suave */
   --bs-secondary-color: #999999;           /* Para placeholders u opciones secundarias */
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 html {
-  scroll-padding-top: 80px;
   font-size: 14px;
   position: relative;
   min-height: 100%;
@@ -32,11 +35,6 @@ body {
   margin-bottom: 60px;
   min-height: 100vh;
   background-color: #000;
-  background-image: url('/images/sinapsis3.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
 }
 
 /*Configuracion de etiquetas*/
@@ -53,7 +51,7 @@ h2, h3, h4 {
   font-weight: 700;
 }
 
-p, a, li, label, input, textarea, .navbar a, footer{
+p, a, li, label, input, textarea, .navbar a, footer {
   color: var(--color-secondary);
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
@@ -66,22 +64,51 @@ p.lead {
 
 /*Configuracion de navbar*/
 
-.navbar, footer {
-  background-color: var(--color-navbar-footer-bg);
+/* Navbar transparente con fondo semitransparente y blur */
+.navbar {
+  box-shadow: none !important;
+  transition: background-color 0.3s ease;
 }
 
 .navbar .nav-link {
-  color: var(--color-primary) !important;
+  color: rgba(255,255,255,0.85) !important;
+  transition: color 0.3s ease;
 }
 
-.navbar .nav-link:hover {
-  color: var(--color-secondary) !important;
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: var(--color-primary-hover) !important; /* dorado */
 }
 
-.navbar a:hover {
-  color: var(--color-secondary) !important;
+/* Botón toggler del menú móvil también transparente */
+.navbar-toggler {
+  border-color: rgba(255,255,255,0.6);
 }
 
+.navbar-toggler-icon {
+  filter: invert(1); /* Icono blanco para fondo oscuro/transparente */
+}
+
+/* Dropdown menu transparente con blur */
+.dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: none;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.dropdown-menu .dropdown-item {
+  color: var(--color-primary) !important; /* Blanco inicial */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+  background-color: rgba(245, 245, 245, 0.2) !important; /* Dorado claro con transparencia */
+  color: var(--color-primary-hover) !important; /* Dorado al hover/focus */
+}
+/**/
 /*configuracion de dropdown*/
 
 .dropdown-menu-transparent {
@@ -164,7 +191,6 @@ input::placeholder, textarea::placeholder {
   margin: 0 auto;
 }
 
-
 /*NLP*/
 #Nlp {
   min-height: 100vh;
@@ -183,4 +209,57 @@ input::placeholder, textarea::placeholder {
   min-height: 100vh;
   display: flex;
   align-items: center;
+}
+
+/**/
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 500px; /* altura fija */
+  margin-top: 0px; /* ajustar si navbar tiene otra altura */
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+/* Banner con imagen de fondo */
+.banner-container {
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/bannerPaola8.png');
+  background-size: cover;      /* Cambiado de cover a contain */
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-color: #000000;     /* Fondo blanco para rellenar espacio */
+  filter: brightness(0.85);
+  z-index: 1;
+}
+/* Redes sociales a la derecha, vertical */
+.social-floating {
+  position: absolute;
+  bottom: 20px;   /* pegado abajo con un margen */
+  right: 20px;    /* pegado a la derecha */
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 10;
+  transform: none;
+}
+
+.social-floating a {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-floating a:hover {
+  background-color: #f5c518;
+  color: black;
 }

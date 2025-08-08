@@ -13,43 +13,70 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow mb-3 fixed-top">
+        <nav class="navbar navbar-expand-sm  mb-3 fixed-top">
             <div class="container-fluid">
+                <!-- Logo y nombre -->
+                <!--
                 <a class="navbar-brand d-flex align-items-center" asp-area="" asp-controller="Home" asp-action="Index">
                     <img src="~/images/PaolaLogo3.png" alt="Logo" style="height: 32px; width: auto; margin-right: 8px;" />
                     Paola Amarillo
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                -->
+
+                <!-- Botón menú móvil -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+
+                <!-- Menú principal alineado a la derecha -->
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto align-items-center">
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Acerca de mí</a>
                         </li>
                         <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServicios" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Servicios
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-transparent" aria-labelledby="navbarDropdownServicios">
-                            <li><a class="dropdown-item" href="#Nlp">Programación Neurolingüística (PNL)</a></li>
-                            <li><a class="dropdown-item" href="#Graphology">Grafología aplicada al entorno empresarial</a></li>
-                            <li><a class="dropdown-item" href="#rrhh">Consultoría en Recursos Humanos y Desarrollo de Equipos</a></li>
-                            <li><a class="dropdown-item" href="#administrativo">Experiencia Administrativa, Contable y Legal</a></li>
-                        </ul>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServicios" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownServicios">
+                                <li><a class="dropdown-item" href="#Nlp">Programación Neurolingüística (PNL)</a></li>
+                                <li><a class="dropdown-item" href="#Graphology">Grafología aplicada al entorno empresarial</a></li>
+                                <li><a class="dropdown-item" href="#rrhh">Consultoría en Recursos Humanos y Desarrollo de Equipos</a></li>
+                                <li><a class="dropdown-item" href="#administrativo">Experiencia Administrativa, Contable y Legal</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item"></li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#migrando-emociones">Migrando Emociones</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Contacto</a>
+                        </li>
+
+                        <!-- Botón de idioma dentro del menú -->
+                        <li class="nav-item ms-3">
+                            <button class="btn btn-outline-primary btn-sm">
+                                <i class="fa-solid fa-globe"></i> EN
+                            </button>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <!-- Imagen con redes sociales -->
+    <section class="hero-banner position-relative">
+        <div class="banner-container">
+
+    <!-- Redes sociales flotantes a la derecha -->
+        <div class="social-floating">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </section>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
