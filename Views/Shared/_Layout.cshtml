@@ -56,8 +56,8 @@
 
                         <!-- Botón de idioma dentro del menú -->
                         <li class="nav-item ms-3">
-                            <button class="btn btn-outline-primary btn-sm">
-                                <i class="fa-solid fa-globe"></i> EN
+                            <button class="btn btn-outline-primary btn-sm btn-language">
+                                <i class="fa-solid fa-globe"></i> ES
                             </button>
                         </li>
                     </ul>
@@ -68,45 +68,33 @@
     <!-- Imagen con redes sociales -->
     <section class="hero-banner position-relative">
         <div class="banner-container">
+            <div class="banner-text">
+                <h1>Paola Amarillo</h1>
+                <p>Máster en Programación Neurolingüística – Perito Grafóloga – Selectora de Personal</p>
+            </div>
 
-    <!-- Redes sociales flotantes a la derecha -->
-        <div class="social-floating">
-            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <!-- Redes sociales flotantes a la derecha -->
+            <div class="social-floating">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
         </div>
     </section>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
+        <footer class="footer text-muted row align-items-center py-3 position-relative" >            
+            <div class="col-md-6 text-start">
+                &copy; 2025 - PaolaAmarillo - 
+                <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>      
+        </footer>
     </div>
 
-    <footer class="footer text-muted">
-        <div class="container py-3">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-start">
-                    &copy; 2025 - PaolaAmarillo - 
-                    <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                </div>
-                <div class="col-md-6 text-center">
-                    <a href="https://facebook.com" target="_blank" class="text-muted mx-2">
-                        <i class="fab fa-facebook fa-lg"></i>
-                    </a>
-                    <a href="https://instagram.com" target="_blank" class="text-muted mx-2">
-                        <i class="fab fa-instagram fa-lg"></i>
-                    </a>
-                    <a href="https://twitter.com" target="_blank" class="text-muted mx-2">
-                        <i class="fab fa-twitter fa-lg"></i>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" class="text-muted mx-2">
-                        <i class="fab fa-linkedin fa-lg"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
+   
 
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

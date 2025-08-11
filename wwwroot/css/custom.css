@@ -11,6 +11,7 @@
   --bs-secondary-color: #999999;           /* Para placeholders u opciones secundarias */
 }
 
+
 html, body {
   margin: 0;
   padding: 0;
@@ -71,7 +72,7 @@ p.lead {
 }
 
 .navbar .nav-link {
-  color: rgba(255,255,255,0.85) !important;
+  color: gray !important;
   transition: color 0.3s ease;
 }
 
@@ -89,6 +90,40 @@ p.lead {
   filter: invert(1); /* Icono blanco para fondo oscuro/transparente */
 }
 
+.navbar i {
+  color: gray;
+}
+
+/* Botón de idioma con estilo de redes sociales */
+.btn-language {
+    background-color: rgba(0, 0, 0, 0.6); /* Igual que social-floating */
+    color: gray;
+    padding: 5px 25px; /* más ancho */
+    width: 50px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px; /* leve redondeo estilo botón */
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    padding: 0; /* Para que no se deforme */
+    gap: 6px;
+    font-size: 0.9rem;
+}
+
+.btn-language:hover {
+    background-color: #f5c518; /* Hover dorado igual que redes */
+    color: black;
+}
+
+/* Ajuste del icono adentro */
+.btn-language i {
+    font-size: 16px;
+}
+
+
 /* Dropdown menu transparente con blur */
 .dropdown-menu {
   background-color: rgba(255, 255, 255, 0.15) !important;
@@ -99,7 +134,7 @@ p.lead {
 }
 
 .dropdown-menu .dropdown-item {
-  color: var(--color-primary) !important; /* Blanco inicial */
+  color: gray !important; /* Blanco inicial */
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -215,24 +250,25 @@ input::placeholder, textarea::placeholder {
 .hero-banner {
   position: relative;
   width: 100%;
-  height: 500px; /* altura fija */
-  margin-top: 0px; /* ajustar si navbar tiene otra altura */
+  height: 460px;
   background-color: #ffffff;
   overflow: hidden;
 }
 
 /* Banner con imagen de fondo */
 .banner-container {
-  position: absolute;
-  inset: 0;
-  background-image: url('/images/bannerPaola8.png');
-  background-size: cover;      /* Cambiado de cover a contain */
-  background-position: right center;
+  position: relative; /* estaba relative pero con inset lo forzabas */
+  width: 100%;
+  height: 100%; /* para que tome el alto del hero-banner */
+  background-image: url('/images/bannerPaola17.png');
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  background-color: #000000;     /* Fondo blanco para rellenar espacio */
+  background-color: #000000;
   filter: brightness(0.85);
   z-index: 1;
 }
+
 /* Redes sociales a la derecha, vertical */
 .social-floating {
   position: absolute;
@@ -248,7 +284,7 @@ input::placeholder, textarea::placeholder {
 
 .social-floating a {
   background-color: rgba(0, 0, 0, 0.6);
-  color: white;
+  color: gray !important;
   width: 40px;
   height: 40px;
   display: flex;
@@ -263,3 +299,31 @@ input::placeholder, textarea::placeholder {
   background-color: #f5c518;
   color: black;
 }
+
+/**/
+
+.banner-text {
+  position: relative;
+  
+  /* Cambia estas propiedades para mover el texto: */
+  top: 50%;                     /* distancia desde arriba */
+  /*right: 30px;    */              /* distancia desde la derecha */
+  left: 55%;                  /* alternativamente usar left */
+  bottom: 30px;                 /* o bottom */
+  transform: translate(-50%, -50%);  /* para centrar verticalmente si usás top: 50% */
+  max-width: 40%;               /* ancho máximo del texto */
+  text-align: center;            /* alineación del texto */
+  z-index: 10;
+}
+
+.banner-text h1 {
+  color: gray;
+  font-size: 7rem;
+  margin-bottom: 0.5rem;
+}
+
+.banner-text p {
+  font-size: 1.2rem;
+}
+
+/**/
