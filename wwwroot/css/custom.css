@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700&family=Lato&display=swap');
 
 :root {
+  --color-for-bg-gray: gray;
   --color-primary: #fafafa;                /* Blanco */
   --color-secondary: #ffbb00;              /* Dorado */
   --color-primary-hover: #F5C518 ;         /* Dorado claro (hover) */
@@ -23,7 +24,6 @@ html {
   position: relative;
   min-height: 100%;
   scroll-behavior: smooth;
-  color: var(--color-text-normal);
 }
 
 @media (min-width: 768px) {
@@ -202,9 +202,10 @@ input::placeholder, textarea::placeholder {
 
 /* Sección "Sobre mí" ocupa toda la altura del viewport */
 #AboutMe {
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
+  background-color: #000;
 }
 
 /* Centrado vertical del texto dentro de la columna derecha */
@@ -217,15 +218,14 @@ input::placeholder, textarea::placeholder {
 
 /* Imagen del perfil con sombra y recorte */
 .img-profile {
-  filter: drop-shadow(5px 5px 10px orange);
-  mask-image: linear-gradient(black 80%, transparent);
-  max-height: 700px;
-  width: auto;
-  object-fit: contain;
+  width: 250px;           /* mismo ancho */
+  height: 250px;          /* mismo alto */
+  object-fit: cover;      /* recorta para llenar */
+  border-radius: 50%;     /* círculo perfecto */
   display: block;
   margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* opcional */
 }
-
 /*NLP*/
 #Nlp {
   min-height: 100vh;
@@ -244,7 +244,53 @@ input::placeholder, textarea::placeholder {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  background-color:rgb(184, 184, 184);
 }
+#Graphology h2, #Graphology p, #Graphology ul, #Graphology li{
+  color: gray;
+}
+
+#Graphology strong{
+  color: white;
+}
+
+/*rrhh*/
+
+#rrhh {
+  min-height: 100vh;
+  align-items: center;
+  background-color:rgb(184, 184, 184);
+}
+#rrhh h2, #rrhh p, #rrhh ul, #rrhh li{
+  color: gray;
+}
+
+#rrhh strong{
+  color: white;
+}
+
+/*administrative*/
+#administrative {
+  min-height: 60vh;
+  align-items: center;
+}
+
+
+/*migrandoEmociones*/
+
+#migrandoEmociones {
+  align-items: center center;
+  min-height: 50vh;
+  background-color:rgb(184, 184, 184);
+}
+#migrandoEmociones h2, #migrandoEmociones p, #migrandoEmociones ul, #migrandoEmociones li{
+  color: gray;
+}
+
+#migrandoEmociones strong{
+  color: white;
+}
+
 
 /**/
 .hero-banner {
