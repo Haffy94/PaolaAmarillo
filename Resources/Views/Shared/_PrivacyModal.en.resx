@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PrivacyPolicyTitle" xml:space="preserve">
+    <value>Privacy Policy</value>
+    <comment/>
+  </data>
+  <data name="WhoIamTitle" xml:space="preserve">
+    <value>Who I am and how I handle your data</value>
+    <comment/>
+  </data>
+  <data name="WhoIamText" xml:space="preserve">
+    <value>I’m Lucas Hafner, and this is my personal page where I showcase my projects. I want you to know that I respect your privacy and the only data I ask for is your email when you use the contact form.</value>
+    <comment/>
+  </data>
+  <data name="WhatDataTitle" xml:space="preserve">
+    <value>What data I collect</value>
+    <comment/>
+  </data>
+  <data name="WhatDataText" xml:space="preserve">
+    <value>I only collect your email when you leave it in the form so I can respond to you.</value>
+    <comment/>
+  </data>
+  <data name="EmailUsageTitle" xml:space="preserve">
+    <value>What I use your email for</value>
+    <comment/>
+  </data>
+  <data name="EmailUsageText" xml:space="preserve">
+    <value>I use your email exclusively to reply to your messages and inquiries, and to contact you about topics related to my projects if necessary.</value>
+    <comment/>
+  </data>
+  <data name="HowIProtectTitle" xml:space="preserve">
+    <value>How I protect your data</value>
+    <comment/>
+  </data>
+  <data name="HowIProtectText" xml:space="preserve">
+    <value>I safeguard your data with security measures to prevent unauthorized access or loss.</value>
+    <comment/>
+  </data>
+  <data name="NoSharingTitle" xml:space="preserve">
+    <value>I do not share your email</value>
+    <comment/>
+  </data>
+  <data name="NoSharingText" xml:space="preserve">
+    <value>Your email will not be sold or shared with anyone. I will only use it for the purposes I mentioned and nothing else.</value>
+    <comment/>
+  </data>
+  <data name="YourRightsTitle" xml:space="preserve">
+    <value>Your rights</value>
+    <comment/>
+  </data>
+  <data name="YourRightsText" xml:space="preserve">
+    <value>If you want me to delete or correct your email, just write to me at lucasezequielhafner@gmail.com and I will do it.</value>
+    <comment/>
+  </data>
+  <data name="CookiesUsageTitle" xml:space="preserve">
+    <value>Use of cookies</value>
+    <comment/>
+  </data>
+  <data name="CookiesUsageText" xml:space="preserve">
+    <value>This site may use cookies to improve your experience, but you can configure your browser to block them if you want.</value>
+    <comment/>
+  </data>
+  <data name="QuestionsTitle" xml:space="preserve">
+    <value>Questions?</value>
+    <comment/>
+  </data>
+  <data name="QuestionsText" xml:space="preserve">
+    <value>If you have any questions about how I handle your information, write to me at lucasezequielhafner@gmail.com</value>
+    <comment/>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+    <comment/>
+  </data>
+</root>

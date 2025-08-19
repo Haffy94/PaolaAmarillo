@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="AdminTitle" xml:space="preserve">
+    <value>Administrative, Accounting and Legal Experience</value>
+  </data>
+  <data name="AdminSubtitle" xml:space="preserve">
+    <value>Comprehensive management with a strategic approach</value>
+  </data>
+  <data name="AdminText1" xml:space="preserve">
+    <value>I have solid experience in administrative, accounting, and legal areas, complemented with commercial advising and client development for companies.</value>
+  </data>
+  <data name="AdminText2" xml:space="preserve">
+    <value>I have managed administrative and financial processes with precision, from accounting organization, expense control, bank reconciliations, and documentation management, to comprehensive supplier and client support.</value>
+  </data>
+  <data name="AdminText3" xml:space="preserve">
+    <value>As a legal assistant, I supported law firms and organizations with civil, immigration, and registry procedures, handling drafting, submission, and follow-up of files with responsibility and professional focus.</value>
+  </data>
+</root>

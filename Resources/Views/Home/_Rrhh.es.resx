@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="HrTitle" xml:space="preserve">
+    <value>Consultoría en Recursos Humanos y Desarrollo de Equipos</value>
+  </data>
+  <data name="HrQuestion" xml:space="preserve">
+    <value>¿Cómo puedo ayudarte en tu empresa?</value>
+  </data>
+  <data name="HrText" xml:space="preserve">
+    <value>Diseño procesos de selección estratégicos, basados en valores, competencias y alineación con la cultura organizacional. Acompaño la integración de nuevos talentos y el desarrollo de equipos de alto rendimiento, priorizando la comunicación interna y el bienestar emocional.</value>
+  </data>
+  <data name="HrBenefitsTitle" xml:space="preserve">
+    <value>Beneficios concretos:</value>
+  </data>
+  <data name="HrBenefit1" xml:space="preserve">
+    <value>Equipos más cohesionados y eficientes.</value>
+  </data>
+  <data name="HrBenefit2" xml:space="preserve">
+    <value>Selección de personal con mayor precisión y menor rotación.</value>
+  </data>
+  <data name="HrBenefit3" xml:space="preserve">
+    <value>Mejora en el clima laboral y desarrollo de talento interno.</value>
+  </data>
+  <data name="HrBenefit4" xml:space="preserve">
+    <value>Procesos más humanos, conscientes y alineados a los objetivos.</value>
+  </data>
+</root>

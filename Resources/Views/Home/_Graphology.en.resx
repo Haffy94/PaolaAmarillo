@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, ...</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, ...</value></resheader>
+
+  <data name="GraphologyTitle" xml:space="preserve">
+    <value>Graphology applied to the business environment</value>
+  </data>
+  <data name="GraphologySection1Title" xml:space="preserve">
+    <value>What is it and how do I apply it?</value>
+  </data>
+  <data name="GraphologySection1Text" xml:space="preserve">
+    <value>Graphology is a technique that allows understanding personality traits through the analysis of handwriting. I use it as a complementary tool in selection processes and organizational diagnostics.</value>
+  </data>
+  <data name="GraphologySection2Title" xml:space="preserve">
+    <value>What do I analyze in a graphological profile?</value>
+  </data>
+  <data name="GraphologySection2Text" xml:space="preserve">
+    <value>From rhythm and pressure of the strokes to elements such as underlining the name, which may indicate a need for recognition or self-assertion depending on interpretations.</value>
+  </data>
+  <data name="GraphologySection3Title" xml:space="preserve">
+    <value>What is it used for in companies?</value>
+  </data>
+  <data name="GraphologyList1" xml:space="preserve">
+    <value>Complement interviews and psychological tests.</value>
+  </data>
+  <data name="GraphologyList2" xml:space="preserve">
+    <value>Help profile candidates in selection processes.</value>
+  </data>
+  <data name="GraphologyList3" xml:space="preserve">
+    <value>Identify strengths and areas of improvement in existing teams.</value>
+  </data>
+  <data name="GraphologyList4" xml:space="preserve">
+    <value>Provide a different perspective on cognitive and emotional styles.</value>
+  </data>
+  <data name="GraphologySection4Title" xml:space="preserve">
+    <value>Why do I use it?</value>
+  </data>
+  <data name="GraphologySection4Text" xml:space="preserve">
+    <value>To evaluate profiles, identify strengths, compatibilities, work styles, and improvement areas, both in candidates and established teams. It offers a deep perspective complementing other personal and professional assessment tools.</value>
+  </data>
+</root>

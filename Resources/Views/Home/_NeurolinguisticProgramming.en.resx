@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, ...</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, ...</value>
+  </resheader>
+
+  <data name="NlpTitle" xml:space="preserve">
+    <value>Neuro-Linguistic Programming (NLP)</value>
+  </data>
+  <data name="NlpLead" xml:space="preserve">
+    <value>What is it and how does it add value in the Organizational context?</value>
+  </data>
+  <data name="NlpSection1Title" xml:space="preserve">
+    <value>NLP is a tool focused on studying language and neurological processes that influence human behavior and communication.</value>
+  </data>
+  <data name="NlpSection1Text" xml:space="preserve">
+    <value>Through various techniques, it helps generate positive changes in the way we think, communicate, and act, allowing us to change patterns and achieve desired results.</value>
+  </data>
+  <data name="NlpSection2Title" xml:space="preserve">
+    <value>How does it work?</value>
+  </data>
+  <data name="NlpSection2Text" xml:space="preserve">
+    <value>It is based on four fundamental pillars:</value>
+  </data>
+  <data name="NlpList1" xml:space="preserve">
+    <value>Result orientation: define clear goals that facilitate action.</value>
+  </data>
+  <data name="NlpList2" xml:space="preserve">
+    <value>Effective communication: both verbal and non-verbal, including empathy, active listening, and rapport.</value>
+  </data>
+  <data name="NlpList3" xml:space="preserve">
+    <value>Sensorial acuity: tune in to visual, auditory, and kinesthetic channels.</value>
+  </data>
+  <data name="NlpList4" xml:space="preserve">
+    <value>Behavioral flexibility: change strategies that do not work and adapt to the context.</value>
+  </data>
+  <data name="NlpSection3Title" xml:space="preserve">
+    <value>Techniques I use in my coaching:</value>
+  </data>
+  <data name="NlpTech1" xml:space="preserve">
+    <value>Anchoring: activate desired emotional states in work contexts.</value>
+  </data>
+  <data name="NlpTech2" xml:space="preserve">
+    <value>Reframing: transform limiting perceptions into learning opportunities.</value>
+  </data>
+  <data name="NlpTech3" xml:space="preserve">
+    <value>Modeling: replicate successful behaviors of leaders.</value>
+  </data>
+  <data name="NlpTech4" xml:space="preserve">
+    <value>Rapport: build trust through respectful communication.</value>
+  </data>
+  <data name="NlpSection4Title" xml:space="preserve">
+    <value>How do I apply NLP in your company?</value>
+  </data>
+  <data name="NlpSection4Text" xml:space="preserve">
+    <value>I design and facilitate personalized training to improve internal communication, team cohesion, motivation, and leadership with emotional effectiveness. My approach enhances self-confidence, reduces stress, and creates a productive work environment aligned with your goals to achieve the desired productivity.</value>
+  </data>
+</root>

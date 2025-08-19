@@ -1,24 +1,24 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
 <div id="rrhh" class="container-fluid">
     <div class="container py-5">
         <div class="row align-items-center">
             <div class="col-md-5">
-            <img src="~/images/rrhh2.png" alt="rrhh" class="img-fluid rounded-3 shadow">
+                <img src="~/images/rrhh2.png" alt="rrhh" class="img-fluid rounded-3 shadow">
             </div>
             <div class="col-md-7">
-                <h2 class="fw-bold mb-3">Consultoría en Recursos Humanos y Desarrollo de Equipos</h2>
-                <p><strong>¿Cómo puedo ayudarte en tu empresa?</strong></p>
-                <p>
-                    Diseño procesos de selección estratégicos, basados en valores, competencias y alineación con la cultura organizacional. Acompaño la integración de nuevos talentos y el desarrollo de equipos de alto rendimiento, priorizando la comunicación interna y el bienestar emocional.
-                </p>
-                <p><strong>Beneficios concretos:</strong></p>
+                <h2 class="fw-bold mb-3">@Localizer["HrTitle"]</h2>
+                <p><strong>@Localizer["HrQuestion"]</strong></p>
+                <p>@Localizer["HrText"]</p>
+                <p><strong>@Localizer["HrBenefitsTitle"]</strong></p>
                 <ul>
-                    <li>Equipos más cohesionados y eficientes.</li>
-                    <li>Selección de personal con mayor precisión y menor rotación.</li>
-                    <li>Mejora en el clima laboral y desarrollo de talento interno.</li>
-                    <li>Procesos más humanos, conscientes y alineados a los objetivos.</li>
+                    <li>@Localizer["HrBenefit1"]</li>
+                    <li>@Localizer["HrBenefit2"]</li>
+                    <li>@Localizer["HrBenefit3"]</li>
+                    <li>@Localizer["HrBenefit4"]</li>
                 </ul>
             </div>
         </div>
-        
     </div>
 </div>

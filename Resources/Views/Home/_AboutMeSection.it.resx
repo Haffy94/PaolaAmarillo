@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, ...</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, ...</value>
+  </resheader>
+
+  <data name="AboutMeParagraph1" xml:space="preserve">
+    <value>Supporto aziende e imprenditori nel rafforzare i loro team attraverso un approccio integrale che combina strumenti di analisi umana, comunicazione efficace e processi di selezione consapevoli</value>
+  </data>
+  <data name="AboutMeParagraph2" xml:space="preserve">
+    <value>Il mio approccio si concentra sullo sviluppo personale e professionale, sia a livello individuale che organizzativo, integrando diverse discipline per promuovere ambienti di lavoro più umani, efficienti e allineati ai valori condivisi.</value>
+  </data>
+</root>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="AdminTitle" xml:space="preserve">
+    <value>Esperienza Amministrativa, Contabile e Legale</value>
+  </data>
+  <data name="AdminSubtitle" xml:space="preserve">
+    <value>Gestione integrale con approccio strategico</value>
+  </data>
+  <data name="AdminText1" xml:space="preserve">
+    <value>Ho una solida esperienza nelle aree amministrative, contabili e legali, completata da competenze in consulenza commerciale e sviluppo clienti per le aziende.</value>
+  </data>
+  <data name="AdminText2" xml:space="preserve">
+    <value>Ho gestito processi amministrativi e finanziari con precisione, dall’organizzazione contabile, controllo delle spese, riconciliazioni bancarie e gestione della documentazione, fino all’assistenza completa a fornitori e clienti.</value>
+  </data>
+  <data name="AdminText3" xml:space="preserve">
+    <value>Come assistente legale, ho supportato studi e organizzazioni in pratiche civili, migratorie e di registrazione, occupandomi della redazione, presentazione e monitoraggio dei fascicoli con responsabilità e approccio professionale.</value>
+  </data>
+</root>

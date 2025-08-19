@@ -1,30 +1,31 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
 <div id="Graphology" class="container-fluid">
-    <div class=" container py-5">
+    <div class="container py-5">
         <div class="row align-items-center">
             <div class="col-md-5">
-            <img src="~/images/grafologia.png" alt="grafologia" class="img-fluid rounded-3 shadow" style="max-height:350px;">
+                <img src="~/images/grafologia.png" alt="grafologia" class="img-fluid rounded-3 shadow" style="max-height:350px;">
             </div>
             <div class="col-md-7">
-            <h2 class="fw-bold mb-3">Grafología aplicada al entorno empresarial</h2>
-            <p><strong>¿Qué es y cómo la aplico?</strong></p>
-            <p>
-                La grafología es una técnica que permite conocer rasgos de personalidad a través del análisis de la escritura manuscrita. Es una herramienta que utilizo como complemento en procesos de selección y diagnóstico organizacional.
-            </p>
-            <p><strong>¿Qué analizo en un perfil grafológico?</strong></p>
-            <p>
-                Desde ritmo y presiones del trazo hasta elementos como el subrayado del nombre, que puede sugerir necesidad de reconocimiento o autoafirmación según distintas interpretaciones.
-            </p>
-            <p><strong>¿Para qué sirve en las empresas?</strong></p>
-            <ul>
-                <li>Complementar entrevistas y test psicológicos.</li>
-                <li>Ayudar a perfilar candidatos en procesos de selección.</li>
-                <li>Identificar fortalezas y áreas de mejora en equipos ya constituidos.</li>
-                <li>Aportar una lectura diferente sobre estilos cognitivos y emocionales.</li>
-            </ul>
-            <p><strong>¿Para qué la utilizo?</strong></p>
-            <p>
-                Para evaluar perfiles, identificar fortalezas, compatibilidades, estilos de trabajo y áreas de mejora, tanto en candidatos como en equipos ya consolidados. Aporta una perspectiva profunda que complementa otras herramientas de evaluación personal y profesional.
-            </p>
+                <h2 class="fw-bold mb-3">@Localizer["GraphologyTitle"]</h2>
+
+                <p><strong>@Localizer["GraphologySection1Title"]</strong></p>
+                <p>@Localizer["GraphologySection1Text"]</p>
+
+                <p><strong>@Localizer["GraphologySection2Title"]</strong></p>
+                <p>@Localizer["GraphologySection2Text"]</p>
+
+                <p><strong>@Localizer["GraphologySection3Title"]</strong></p>
+                <ul>
+                    <li>@Localizer["GraphologyList1"]</li>
+                    <li>@Localizer["GraphologyList2"]</li>
+                    <li>@Localizer["GraphologyList3"]</li>
+                    <li>@Localizer["GraphologyList4"]</li>
+                </ul>
+
+                <p><strong>@Localizer["GraphologySection4Title"]</strong></p>
+                <p>@Localizer["GraphologySection4Text"]</p>
             </div>
         </div>
     </div>    

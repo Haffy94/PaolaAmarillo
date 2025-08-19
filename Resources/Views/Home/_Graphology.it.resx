@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, ...</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, ...</value></resheader>
+
+  <data name="GraphologyTitle" xml:space="preserve">
+    <value>Grafologia applicata all'ambiente aziendale</value>
+  </data>
+  <data name="GraphologySection1Title" xml:space="preserve">
+    <value>Cos'è e come la applico?</value>
+  </data>
+  <data name="GraphologySection1Text" xml:space="preserve">
+    <value>La grafologia è una tecnica che permette di conoscere i tratti della personalità attraverso l'analisi della scrittura a mano. La utilizzo come strumento complementare nei processi di selezione e nella diagnostica organizzativa.</value>
+  </data>
+  <data name="GraphologySection2Title" xml:space="preserve">
+    <value>Cosa analizzo in un profilo grafologico?</value>
+  </data>
+  <data name="GraphologySection2Text" xml:space="preserve">
+    <value>Dal ritmo e dalla pressione del tratto a elementi come la sottolineatura del nome, che può indicare necessità di riconoscimento o autoaffermazione secondo diverse interpretazioni.</value>
+  </data>
+  <data name="GraphologySection3Title" xml:space="preserve">
+    <value>A cosa serve nelle aziende?</value>
+  </data>
+  <data name="GraphologyList1" xml:space="preserve">
+    <value>Completare colloqui e test psicologici.</value>
+  </data>
+  <data name="GraphologyList2" xml:space="preserve">
+    <value>Aiutare a profilare i candidati nei processi di selezione.</value>
+  </data>
+  <data name="GraphologyList3" xml:space="preserve">
+    <value>Identificare punti di forza e aree di miglioramento nei team già costituiti.</value>
+  </data>
+  <data name="GraphologyList4" xml:space="preserve">
+    <value>Fornire una lettura differente sugli stili cognitivi ed emotivi.</value>
+  </data>
+  <data name="GraphologySection4Title" xml:space="preserve">
+    <value>Perché la utilizzo?</value>
+  </data>
+  <data name="GraphologySection4Text" xml:space="preserve">
+    <value>Per valutare profili, identificare punti di forza, compatibilità, stili di lavoro e aree di miglioramento, sia nei candidati che nei team già consolidati. Offre una prospettiva profonda che integra altri strumenti di valutazione personale e professionale.</value>
+  </data>
+</root>

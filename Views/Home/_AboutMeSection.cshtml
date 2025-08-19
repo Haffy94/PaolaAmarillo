@@ -1,12 +1,11 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
 <div id="AboutMe" class="container py-5">
   <div class="row align-items-center">    
     <div class="col-md-7">
-      <p>
-        Acompaño a empresas y emprendedores a fortalecer sus equipos desde una mirada integral que combina herramientas de análisis humano, comunicación efectiva y procesos conscientes de selección
-      </p>
-      <p>
-        Mi enfoque se basa en potenciar el desarrollo personal y profesional, tanto a nivel individual como organizacional, integrando distintas disciplinas con el objetivo de promover entornos laborales más humanos, eficientes y alineados con valores compartidos.
-      </p>
+      <p>@Localizer["AboutMeParagraph1"]</p>
+      <p>@Localizer["AboutMeParagraph2"]</p>
     </div>
     <div class="col-md-5">
       <img src="~/images/paolaPerfil03.png" alt="Paola Amarillo" class="img-profile">

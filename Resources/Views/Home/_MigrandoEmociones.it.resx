@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="MigrandoTitle" xml:space="preserve">
+    <value>Fondatrice di Migrando Emociones</value>
+  </data>
+  <data name="MigrandoText1" xml:space="preserve">
+    <value>Sono fondatrice e presidente dell’associazione senza scopo di lucro <strong>Migrando Emociones</strong>, con sede in Italia. Insieme alla mia socia, promuoviamo il supporto completo alle persone migranti, combinando orientamento legale, sostegno emotivo e formazione interculturale.</value>
+  </data>
+  <data name="MigrandoText2" xml:space="preserve">
+    <value>Questa iniziativa nasce dall’impegno condiviso verso una migrazione più consapevole, empatica e organizzata, integrando la nostra esperienza professionale con una visione umana e comunitaria.</value>
+  </data>
+</root>

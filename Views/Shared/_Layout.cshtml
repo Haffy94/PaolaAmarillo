@@ -1,10 +1,12 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Paola Amarillo</title>
-    <script type="importmap"></script>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/custom.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/PaolaAmarillo.styles.css" asp-append-version="true" />
@@ -13,15 +15,8 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm  mb-3 fixed-top">
+        <nav class="navbar navbar-expand-sm mb-3 fixed-top">
             <div class="container-fluid">
-                <!-- Logo y nombre -->
-                <!--
-                <a class="navbar-brand d-flex align-items-center" asp-area="" asp-controller="Home" asp-action="Index">
-                    <img src="~/images/PaolaLogo3.png" alt="Logo" style="height: 32px; width: auto; margin-right: 8px;" />
-                    Paola Amarillo
-                </a>
-                -->
 
                 <!-- Botón menú móvil -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
@@ -33,47 +28,61 @@
                 <div class="collapse navbar-collapse" id="mainNavbar">
                     <ul class="navbar-nav ms-auto align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Acerca de mí</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                                @Localizer["AboutMe"]
+                            </a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServicios" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                                Servicios
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                @Localizer["Services"]
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownServicios">
-                                <li><a class="dropdown-item" href="#Nlp">Programación Neurolingüística (PNL)</a></li>
-                                <li><a class="dropdown-item" href="#Graphology">Grafología aplicada al entorno empresarial</a></li>
-                                <li><a class="dropdown-item" href="#rrhh">Consultoría en Recursos Humanos y Desarrollo de Equipos</a></li>
-                                <li><a class="dropdown-item" href="#administrativo">Experiencia Administrativa, Contable y Legal</a></li>
+                                <li><a class="dropdown-item" href="#Graphology">@Localizer["ServiceGraphology"]</a></li>
+                                <li><a class="dropdown-item" href="#Nlp">@Localizer["ServiceNlp"]</a></li>                            
+                                <li><a class="dropdown-item" href="#rrhh">@Localizer["ServiceHr"]</a></li>
+                                <li><a class="dropdown-item" href="#administrative">@Localizer["ServiceAdmin"]</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#migrando-emociones">Migrando Emociones</a>
+                            <a class="nav-link" href="#migrandoEmociones">@Localizer["MigrandoEmociones"]</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Contacto</a>
+                            <a class="nav-link" href="#contact">@Localizer["Contact"]</a>
                         </li>
 
                         <!-- Botón de idioma dentro del menú -->
-                        <li class="nav-item ms-3">
-                            <button class="btn btn-outline-primary btn-sm btn-language">
-                                <i class="fa-solid fa-globe"></i> ES
+                        <li class="nav-item dropdown ms-3">
+                            <button class="btn btn-outline-primary btn-sm btn-language dropdown-toggle" 
+                                    id="languageDropdown" 
+                                    data-bs-toggle="dropdown" 
+                                    aria-expanded="false">
+                                <i class="fa-solid fa-globe"></i> 
+                                @{
+                                    var currentCulture = System.Globalization.CultureInfo.CurrentUICulture.TwoLetterISOLanguageName.ToUpper();
+                                }
+                                @currentCulture
                             </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                                <li><a class="dropdown-item" href="/?culture=es&ui-culture=es">Español</a></li>
+                                <li><a class="dropdown-item" href="/?culture=en&ui-culture=en">English</a></li>
+                                <li><a class="dropdown-item" href="/?culture=it&ui-culture=it">Italiano</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <!-- Imagen con redes sociales -->
     <section class="hero-banner position-relative">
         <div class="banner-container">
             <div class="banner-text">
                 <h1>Paola Amarillo</h1>
-                <p>Máster en Programación Neurolingüística – Perito Grafóloga – Selectora de Personal</p>
+                <p>@Localizer["HeroDescription"]</p>
             </div>
 
-            <!-- Redes sociales flotantes a la derecha -->
             <div class="social-floating">
                 <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -82,24 +91,23 @@
             </div>
         </div>
     </section>
+
     <div class="container-fluid">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
-        <footer class="footer text-muted row align-items-center py-3 position-relative" >            
+        <footer class="footer text-muted row align-items-center py-3 position-relative">
             <div class="col-md-6 text-start">
                 &copy; 2025 - PaolaAmarillo - 
-                <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                <a href="#" class="privacy" data-bs-toggle="modal" data-bs-target="#privacyModal">Privacy</a>
             </div>      
         </footer>
     </div>
-
-   
-
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    @await Html.PartialAsync("_PrivacyModal")
 </body>
 </html>

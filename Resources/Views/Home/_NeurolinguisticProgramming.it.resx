@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, ...</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, ...</value>
+  </resheader>
+
+  <data name="NlpTitle" xml:space="preserve">
+    <value>Programmazione Neuro-Linguistica (PNL)</value>
+  </data>
+  <data name="NlpLead" xml:space="preserve">
+    <value>Cos'è e come aggiunge valore nell'ambito organizzativo?</value>
+  </data>
+  <data name="NlpSection1Title" xml:space="preserve">
+    <value>La PNL è uno strumento che si concentra sullo studio del linguaggio e dei processi neurologici che influenzano il comportamento umano e la comunicazione.</value>
+  </data>
+  <data name="NlpSection1Text" xml:space="preserve">
+    <value>Attraverso varie tecniche, aiuta a generare cambiamenti positivi nel modo in cui pensiamo, comunichiamo e agiamo, permettendo di modificare schemi e ottenere i risultati desiderati.</value>
+  </data>
+  <data name="NlpSection2Title" xml:space="preserve">
+    <value>Come funziona?</value>
+  </data>
+  <data name="NlpSection2Text" xml:space="preserve">
+    <value>Si basa su quattro pilastri fondamentali:</value>
+  </data>
+  <data name="NlpList1" xml:space="preserve">
+    <value>Orientamento ai risultati: definire obiettivi chiari che facilitino l'azione.</value>
+  </data>
+  <data name="NlpList2" xml:space="preserve">
+    <value>Comunicazione efficace: sia verbale che non verbale, includendo empatia, ascolto attivo e rapport.</value>
+  </data>
+  <data name="NlpList3" xml:space="preserve">
+    <value>Acuità sensoriale: sintonizzarsi con i canali visivo, uditivo e cinestetico.</value>
+  </data>
+  <data name="NlpList4" xml:space="preserve">
+    <value>Flessibilità comportamentale: cambiare strategie che non funzionano e adattarsi al contesto.</value>
+  </data>
+  <data name="NlpSection3Title" xml:space="preserve">
+    <value>Tecniche che utilizzo nel mio accompagnamento:</value>
+  </data>
+  <data name="NlpTech1" xml:space="preserve">
+    <value>Ancoraggi: attivare stati emotivi desiderati nei contesti lavorativi.</value>
+  </data>
+  <data name="NlpTech2" xml:space="preserve">
+    <value>Ristrutturazioni: trasformare percezioni limitanti in opportunità di apprendimento.</value>
+  </data>
+  <data name="NlpTech3" xml:space="preserve">
+    <value>Modellamento: replicare comportamenti di successo dei leader.</value>
+  </data>
+  <data name="NlpTech4" xml:space="preserve">
+    <value>Rapport: creare fiducia attraverso una comunicazione rispettosa.</value>
+  </data>
+  <data name="NlpSection4Title" xml:space="preserve">
+    <value>Come applico la PNL nella tua azienda?</value>
+  </data>
+  <data name="NlpSection4Text" xml:space="preserve">
+    <value>Progetto e facilito training personalizzati per migliorare la comunicazione interna, la coesione dei team, la motivazione e la leadership con efficacia emotiva. Il mio approccio potenzia l'autostima, riduce lo stress e crea un ambiente di lavoro produttivo e allineato ai tuoi obiettivi per raggiungere la produttività desiderata.</value>
+  </data>
+</root>

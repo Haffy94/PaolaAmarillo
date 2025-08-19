@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="HrTitle" xml:space="preserve">
+    <value>Consulenza in Risorse Umane e Sviluppo dei Team</value>
+  </data>
+  <data name="HrQuestion" xml:space="preserve">
+    <value>Come posso aiutare la tua azienda?</value>
+  </data>
+  <data name="HrText" xml:space="preserve">
+    <value>Progetto processi di selezione strategici basati su valori, competenze e allineamento con la cultura organizzativa. Supporto l'integrazione di nuovi talenti e lo sviluppo di team ad alte prestazioni, dando priorità alla comunicazione interna e al benessere emotivo.</value>
+  </data>
+  <data name="HrBenefitsTitle" xml:space="preserve">
+    <value>Benefici concreti:</value>
+  </data>
+  <data name="HrBenefit1" xml:space="preserve">
+    <value>Team più coesi ed efficienti.</value>
+  </data>
+  <data name="HrBenefit2" xml:space="preserve">
+    <value>Selezione del personale con maggiore precisione e minor turnover.</value>
+  </data>
+  <data name="HrBenefit3" xml:space="preserve">
+    <value>Miglioramento del clima lavorativo e sviluppo del talento interno.</value>
+  </data>
+  <data name="HrBenefit4" xml:space="preserve">
+    <value>Processi più umani, consapevoli e allineati agli obiettivi.</value>
+  </data>
+</root>

@@ -1,0 +1,45 @@
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+@using System.Globalization
+
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+
+<div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title privacy-title" id="privacyModalLabel">@Localizer["PrivacyPolicyTitle"]</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong class="privacy-subtitle">@Localizer["WhoIamTitle"]</strong><br />
+        @Localizer["WhoIamText"]</p>
+
+        <p><strong class="privacy-subtitle">@Localizer["WhatDataTitle"]</strong><br />
+        @Localizer["WhatDataText"]</p>
+
+        <p><strong class="privacy-subtitle">@Localizer["EmailUsageTitle"]</strong><br />
+        @Localizer["EmailUsageText"]</p>
+
+        <p><strong class="privacy-subtitle">@Localizer["HowIProtectTitle"]</strong><br />
+        @Localizer["HowIProtectText"]</p>
+
+        <p><strong class="privacy-subtitle">@Localizer["NoSharingTitle"]</strong><br />
+        @Localizer["NoSharingText"]</p>
+
+        <p><strong class="privacy-subtitle">@Localizer["YourRightsTitle"]</strong><br />
+        @Localizer["YourRightsText"]</p>
+
+        <p><strong class="privacy-subtitle">@Localizer["CookiesUsageTitle"]</strong><br />
+        @Localizer["CookiesUsageText"]</p>
+
+        <p><strong class="privacy-subtitle">@Localizer["QuestionsTitle"]</strong><br />
+        @Localizer["QuestionsText"]</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+          @Localizer["Close"]
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

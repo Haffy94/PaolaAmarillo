@@ -1,33 +1,37 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
 <div id="Nlp" class="container py-5">
-  <div class="row align-items-center">
-    <div class="col-md-7">
-      <h2 class="fw-bold mb-3">Programación Neurolingüística (PNL)</h2>
-      <p class="lead">¿Qué es y como aporta valor en el ámbito Organizacional?</p>
-      <p>
-        La PNL es una herramienta que se enfoca en el estudio del lenguaje y proceso neurológico que influyen en el comportamiento humano y la comunicación. A través de distintas técnicas,  ayuda a generar cambios positivos en la forma en que pensamos, nos comunicamos y actuamos, logrando así cambiar patrones y obtener los resultados deseados.
-      </p>
-      <p>¿Cómo funciona?</p>
-      <p>Se basa en cuatro pilares fundamentales:</p>
-      <ul>
-        <li>Orientación a resultados: definir metas claras, facilitadoras de acción.</li>
-        <li>Comunicación eficaz: tanto verbal como no verbal, incluyendo empatía, escucha activa y rapport.</li>
-        <li>Agudeza sensorial: sintonizar con los canales visual, auditivo y kinestésico.</li>
-        <li>Flexibilidad conductual: cambiar estrategias que no funcionan y adaptarse al contexto.</li>
-      </ul>
-      <p>Técnicas que utilizo en mi acompañamiento:</p>
-      <ul>
-        <li>Anclajes: activar estados emocionales deseados en contextos laborales.</li>
-        <li>Reencuadres: transformar percepciones limitantes en oportunidades de aprendizaje.</li>
-        <li>Modelado: replicar comportamientos exitosos de líderes.</li>
-        <li>Rapport: generar confianza a través de una comunicación respetuosa.</li>
-      </ul>
-      <p>¿Cómo aplico la PNL en tu empresa?</p>
-      <p>
-        Diseño y facilito entrenamientos personalizados para mejorar la comunicación interna, la cohesión de equipos, la motivación y el liderazgo con eficacia emocional. Mi enfoque potencia la autoconfianza, reduce el estrés y genera un entorno laboral productivo y alineado con tus objetivos para llegar a la meta de productividad deseada.
-      </p>
+    <div class="row align-items-center">
+        <div class="col-md-7">
+            <h2 class="fw-bold mb-3">@Localizer["NlpTitle"]</h2>
+            <p class="lead">@Localizer["NlpLead"]</p>
+
+            <p>@Localizer["NlpSection1Title"]</p>
+            <p>@Localizer["NlpSection1Text"]</p>
+
+            <p>@Localizer["NlpSection2Title"]</p>
+            <p>@Localizer["NlpSection2Text"]</p>
+            <ul>
+                <li>@Localizer["NlpList1"]</li>
+                <li>@Localizer["NlpList2"]</li>
+                <li>@Localizer["NlpList3"]</li>
+                <li>@Localizer["NlpList4"]</li>
+            </ul>
+
+            <p>@Localizer["NlpSection3Title"]</p>
+            <ul>
+                <li>@Localizer["NlpTech1"]</li>
+                <li>@Localizer["NlpTech2"]</li>
+                <li>@Localizer["NlpTech3"]</li>
+                <li>@Localizer["NlpTech4"]</li>
+            </ul>
+
+            <p>@Localizer["NlpSection4Title"]</p>
+            <p>@Localizer["NlpSection4Text"]</p>
+        </div>
+        <div class="col-md-5">
+            <img src="~/images/cerebro5.png" alt="NlpImg" class="img-fluid rounded-3 shadow img-nlp">
+        </div>
     </div>
-    <div class="col-md-5">
-      <img src="~/images/cerebro5.png" alt="NlpImg" class="img-fluid rounded-3 shadow img-nlp">
-    </div>
-  </div>
 </div>

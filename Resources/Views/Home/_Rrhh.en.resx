@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="HrTitle" xml:space="preserve">
+    <value>Human Resources Consulting and Team Development</value>
+  </data>
+  <data name="HrQuestion" xml:space="preserve">
+    <value>How can I help your company?</value>
+  </data>
+  <data name="HrText" xml:space="preserve">
+    <value>I design strategic selection processes based on values, competencies, and alignment with organizational culture. I support the integration of new talent and the development of high-performance teams, prioritizing internal communication and emotional well-being.</value>
+  </data>
+  <data name="HrBenefitsTitle" xml:space="preserve">
+    <value>Concrete benefits:</value>
+  </data>
+  <data name="HrBenefit1" xml:space="preserve">
+    <value>More cohesive and efficient teams.</value>
+  </data>
+  <data name="HrBenefit2" xml:space="preserve">
+    <value>Personnel selection with higher accuracy and lower turnover.</value>
+  </data>
+  <data name="HrBenefit3" xml:space="preserve">
+    <value>Improved work climate and internal talent development.</value>
+  </data>
+  <data name="HrBenefit4" xml:space="preserve">
+    <value>More human, conscious processes aligned with objectives.</value>
+  </data>
+</root>

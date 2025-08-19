@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+
+  <data name="ContactTitle" xml:space="preserve">
+    <value>Contatto</value>
+  </data>
+  <data name="ContactNameLabel" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="ContactNamePlaceholder" xml:space="preserve">
+    <value>Il tuo nome</value>
+  </data>
+  <data name="ContactEmailLabel" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="ContactEmailPlaceholder" xml:space="preserve">
+    <value>iltuonome@email.com</value>
+  </data>
+  <data name="ContactMessageLabel" xml:space="preserve">
+    <value>Messaggio</value>
+  </data>
+  <data name="ContactMessagePlaceholder" xml:space="preserve">
+    <value>Dicci come possiamo aiutarti...</value>
+  </data>
+  <data name="ContactButton" xml:space="preserve">
+    <value>Invia messaggio</value>
+  </data>
+</root>
