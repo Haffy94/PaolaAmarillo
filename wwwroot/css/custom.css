@@ -377,3 +377,40 @@ input::placeholder, textarea::placeholder {
 footer a {
   color: var(--color-secondary) !important;
 }
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 320px; /* más bajo en celular */
+  }
+
+  .banner-text {
+    position: absolute;
+    top: 40%;                 /* más abajo */
+    left: 50%;                /* centrado */
+    transform: translate(-50%, -50%);
+    max-width: 90%;           /* ocupa más ancho */
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .banner-text h1 {
+    font-size: 4rem;          /* mucho más chico */
+  }
+
+  .banner-text p {
+    font-size: 1rem;
+  }
+
+  .social-floating {
+    bottom: 10px; /* un poco más pegado abajo */
+    right: 10px;
+    flex-direction: row; /* horizontal en mobile para no tapar */
+    gap: 8px;
+  }
+
+  .social-floating a {
+    width: 32px;
+    height: 32px;
+  }
+}
